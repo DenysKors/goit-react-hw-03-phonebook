@@ -1,0 +1,21 @@
+.phonebook__filterLabel {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.phonebook__filterInput {
+  margin-left: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 250px;
+  min-height: 30px;
+  font-size: 16px;
+
+  border: 2px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.phonebook__filterInput:focus {
+  outline: none;
+  border-color: cadetblue;
+}
