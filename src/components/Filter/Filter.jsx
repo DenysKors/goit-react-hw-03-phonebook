@@ -1,17 +1,12 @@
 import PropTypes from 'prop-types';
-import css from 'components/Filter/Filter.module.css';
+import { FilterLabel, FilterInput } from 'components/Filter/Filter.styled';
 
 export const Filter = ({ filter, onFilterChange }) => {
   return (
-    <label className={css.phonebook__filterLabel}>
+    <FilterLabel>
       Find contacts by name
-      <input
-        className={css.phonebook__filterInput}
-        type="text"
-        value={filter}
-        onChange={onFilterChange}
-      />
-    </label>
+      <FilterInput type="text" value={filter} onChange={onFilterChange} />
+    </FilterLabel>
   );
 };
 

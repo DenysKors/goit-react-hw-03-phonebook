@@ -1,5 +1,7 @@
-.phonebook__form {
-  padding: 20px;
+import styled from 'styled-components';
+
+export const Form = styled.form`
+  padding: 30px;
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -7,18 +9,18 @@
 
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
+`;
 
-.phonebook__formLabel {
+export const FormLabel = styled.label`
   display: flex;
   flex-direction: column;
   gap: 5px;
 
   font-weight: 500;
   font-size: 20px;
-}
+`;
 
-.phonebook__formInput {
+export const FormInput = styled.input`
   padding-left: 3px;
   padding-right: 3px;
   width: 250px;
@@ -27,14 +29,14 @@
 
   border: 2px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
 
-.phonebook__formInput:focus {
-  outline: none;
-  border-color: cadetblue;
-}
+  &:focus {
+    outline: none;
+    border-color: cadetblue;
+  }
+`;
 
-.phonebook__formButton {
+export const FormButton = styled.button`
   width: 200px;
 
   font-weight: 600;
@@ -42,10 +44,15 @@
   line-height: 1.88;
   text-align: center;
   color: #ffffff;
-  border-color: cornflowerblue;
 
-  background-color: cornflowerblue;
+  border: none;
   border-radius: 4px;
+  background-color: cornflowerblue;
 
   cursor: pointer;
-}
+
+  &:hover,
+  &:focus {
+    background-color: #0c49b9;
+  }
+`;

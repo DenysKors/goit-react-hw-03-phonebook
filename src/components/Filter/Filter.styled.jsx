@@ -1,9 +1,11 @@
-.phonebook__filterLabel {
+import styled from 'styled-components';
+
+export const FilterLabel = styled.label`
   font-weight: 500;
   font-size: 20px;
-}
+`;
 
-.phonebook__filterInput {
+export const FilterInput = styled.input`
   margin-left: 10px;
   padding-left: 3px;
   padding-right: 3px;
@@ -13,9 +15,9 @@
 
   border: 2px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
 
-.phonebook__filterInput:focus {
-  outline: none;
-  border-color: cadetblue;
-}
+  &:focus {
+    outline: none;
+    border-color: cadetblue;
+  }
+`;
